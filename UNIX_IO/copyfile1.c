@@ -18,7 +18,7 @@ break;
 bp=buf;
 while(bytesread>0)
 {
-while((byteswritten=write(tofd,buf,BLKSIZE)==-1) &&(errno==EINTR));
+while((byteswritten=write(tofd,buf,bytesread)==-1) &&(errno==EINTR));
 if(byteswritten<=0)
 {
 break;

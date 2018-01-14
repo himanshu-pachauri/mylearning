@@ -1,4 +1,7 @@
-//gcc copyfile1.c  simplecopy.c -o read
+//gcc copyfile1.c  simplecopy.c -o simplecopy
+// $./simplecopy <copyfile1.c >myout.dat
+
+
 #include<stdio.h>
 #include<unistd.h>
 
